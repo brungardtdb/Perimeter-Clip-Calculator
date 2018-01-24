@@ -3,6 +3,23 @@
 
 class Corner_Zone
 {
+    private string _initiateProgram; // instance variable
+
+    // property to run or terminate program
+    // (user is prompted to enter -1 to terminate 
+    // program, or any other key to continue.)
+    public string InitiateProgram
+    {
+        get
+        {
+            return _initiateProgram;
+        }
+        set
+        {
+            _initiateProgram = value;
+        }
+    }
+
     private double _zoneSize; // instance variable
 
     // property to get and set the zoneSize instance variable
@@ -150,7 +167,21 @@ class Corner_Zone
         }
     }
 
+    private double _purlinRun;
 
+    // property to get and set the purlinRun instance variable
+    // (property to add purlin run to total purlin runs)
+    public double PurlinRun
+    {
+        get
+        {
+            return _purlinRun;
+        }
+        set
+        {
+            _purlinRun = value;
+        }
+    }
 }
 
 
